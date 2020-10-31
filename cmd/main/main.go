@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/a-dera/Go-Rest/pkg/routes"
-	"github.com/gorilla/mux"
-	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"https://github.com/a-dera/Go-Rest/pkg/routes"
+	"https://github.com/gorilla/mux"
+	_ "https://github.com/jinzhu/gorm/dialects/mysql"
 )
 func main() {
 	r := mux.NewRouter()
