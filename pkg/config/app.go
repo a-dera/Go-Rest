@@ -2,7 +2,7 @@ package config
 
 import (
 	"https://github.com/go-gorm/gorm"
-	_ "github.com/jinzhu/gorm/dialects/mysql"
+	// _ "github.com/go-gorm/gorm/dialects/mysql", can't be found
 )
 
 var (
