@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"https://github.com/a-dera/Go-Restpkg/controllers"
+	"../controllers/"
 	"github.com/gorilla/mux"
 )
 
