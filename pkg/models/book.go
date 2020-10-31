@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/example/simple-REST/pkg/config"
+	"https://github.com/a-dera/Go-Restpkg/config"
 	"github.com/jinzhu/gorm"
 )
 
