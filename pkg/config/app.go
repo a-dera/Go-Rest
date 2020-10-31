@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/jinzhu/gorm"
+	"https://github.com/go-gorm/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
