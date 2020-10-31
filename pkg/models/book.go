@@ -1,11 +1,11 @@
 package models
 
 import (
-	"https://github.com/a-dera/Go-Restpkg/config"
+	"https://github.com/a-dera/Go-Rest/pkg/config"
 	"https://github.com/go-gorm/gorm"
 )
 
-var db *gorm.DB
+var database *gorm.DB
 
 type Book struct {
 	gorm.Model
@@ -17,30 +17,30 @@ type Book struct {
 
 func init() {
 	config.Connect()
-	db = config.GetDB()
-	db.AutoMigrate(&Book{})
+	database = config.GetDB()
+	database.AutoMigrate(&Book{})
 }
 
 func (b *Book) CreateBook() *Book {
-	db.NewRecord(b)
-	db.Create(&b)
+	database.NewRecord(b)
+	database.Create(&b)
 	return b
 }
 
 func  GetAllBooks() []Book {
 	var Books []Book
-	db.Find(&Books)
+	database.Find(&Books)
 	return Books
 }
 
 func GetBookById(Id int64) (*Book , *gorm.DB){
 	var getBook Book
-	db:=db.Where("ID = ?", Id).Find(&getBook)
+	db:=database.Where("ID = ?", Id).Find(&getBook)
 	return &getBook, db
 }
 
 func DeleteBook(ID int64) Book {
 	var book Book
-	db.Where("ID = ?", ID).Delete(book)
+	database.Where("ID = ?", ID).Delete(book)
 	return book
 }
