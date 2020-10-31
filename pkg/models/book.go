@@ -2,7 +2,7 @@ package models
 
 import (
 	"https://github.com/a-dera/Go-Restpkg/config"
-	"github.com/jinzhu/gorm"
+	"https://github.com/go-gorm/gorm"
 )
 
 var db *gorm.DB
