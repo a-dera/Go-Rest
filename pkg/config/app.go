@@ -6,18 +6,18 @@ import (
 )
 
 var (
-	db * gorm.DB
+	database * gorm.DB
 )
 
 func Connect() {
 	// Please define your user name and password for my sql.
-	d, err := gorm.Open("mysql", "root:@/gorest?charset=utf8&parseTime=True&loc=Local")
-	if err != nil{
+	db, error := gorm.Open("mysql", "root:@/gorest?charset=utf8&parseTime=True&loc=Local")
+	if error != nil{
 		panic(err)
 	}
-	db = d
+	database = db
 }
 
 func GetDB() *gorm.DB {
-	return db
+	return database
 }
