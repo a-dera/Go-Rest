@@ -1,4 +1,4 @@
-package: github.com/example/Simple-REST
+package: github.com/example/Simple-REST #changer le lien
 import:
 - package: github.com/gorilla/mux
   version: v1.7.1
