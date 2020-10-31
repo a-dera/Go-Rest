@@ -1,7 +1,7 @@
 package models
 
 import (
-	"https://github.com/a-dera/Go-Rest/pkg/config"
+	"../config/"
 	"https://github.com/go-gorm/gorm"
 )
 
