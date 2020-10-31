@@ -3,11 +3,11 @@ package controllers
 import (
 	"encoding/json"
 	"fmt"
-	"https://github.com/a-dera/Go-Rest/pkg/utils"
+	"../utils/"
 	"github.com/gorilla/mux"
 	"net/http"
 	"strconv"
-	"https://github.com/a-dera/Go-Rest/pkg/models"
+	"../models/"
 )
 
 var NewBook models.Book
