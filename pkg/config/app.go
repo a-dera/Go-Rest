@@ -11,11 +11,11 @@ var (
 
 func Connect() {
 	// Please define your user name and password for my sql.
-	db, err := gorm.Open("mysql", "root:@/gorest?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "root:@/gorest?charset=utf8&parseTime=True&loc=Local")
 	if err != nil{
 		panic(err)
 	}
-	database = db
+	database = d
 }
 
 func GetDB() *gorm.DB {
