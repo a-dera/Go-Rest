@@ -1,9 +1,9 @@
 package models
 
 import (
-	"../config/"
+	"../config"
 	//TODO #2 Correct gorm link
-	"https://github.com/go-gorm/gorm"
+	"gorm.io/gorm"
 )
 
 var database *gorm.DB
