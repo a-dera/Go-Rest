@@ -2,6 +2,7 @@ package models
 
 import (
 	"../config/"
+	//TODO #2 Correct gorm link
 	"https://github.com/go-gorm/gorm"
 )
 
