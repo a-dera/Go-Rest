@@ -7,6 +7,7 @@ import (
 	//TODO #1 Correct the gorilla/mux link
 	"github.com/gorilla/mux"
 	"net/http"
+	"log"
 	"strconv"
 	"../models"
 )
