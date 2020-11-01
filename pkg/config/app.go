@@ -1,8 +1,8 @@
 package config
 
 import (
-	"https://github.com/go-gorm/gorm"
-	// _ "github.com/go-gorm/gorm/dialects/mysql", can't be found
+	"gorm.io/gorm"
+	"gorm.io/driver/mysql"
 )
 
 var (
