@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"../../pkg/routes/"
-	"https://github.com/gorilla/mux"
+	"github.com/gorilla/mux"
 	_ "https://github.com/jinzhu/gorm/dialects/mysql"
 )
 func main() {
