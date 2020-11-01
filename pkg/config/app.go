@@ -2,17 +2,16 @@ package config
 
 import (
 	"gorm.io/gorm"
-	"gorm.io/driver/mysql"
 )
 
 var (
-	database * gorm.DB
+	database *gorm.DB
 )
 
 func Connect() {
-	// Please define your user name and password for my sql.
+	// Please define your user name and password for mysql.
 	d, err := gorm.Open("mysql", "root:@/gorest?charset=utf8&parseTime=True&loc=Local")
-	if err != nil{
+	if err != nil {
 		panic(err)
 	}
 	database = d
