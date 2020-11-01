@@ -2,5 +2,5 @@ package: https://github.com/a-dera/Go-Rest
 import:
 - package: github.com/gorilla/mux
   version: v1.7.1
-- package: github.com/jinzhu/gorm
+- package: github.com/go-gorm/gorms
   version: v1.9.8
