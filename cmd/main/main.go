@@ -4,9 +4,10 @@ import (
 	"log"
 	"net/http"
 
-	"../../pkg/routes/"
+	"../../pkg/routes"
 	"github.com/gorilla/mux"
-	_ "https://github.com/jinzhu/gorm/dialects/mysql"
+	// TODO #3 Get mysql driver
+	"gorm.io/driver/mysql"
 )
 func main() {
 	r := mux.NewRouter()
