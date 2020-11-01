@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"../utils"
 	//TODO #1 Correct the gorilla/mux link
-	"https://www.github.com/gorilla/mux"
+	"github.com/gorilla/mux"
 	"net/http"
 	"strconv"
 	"../models"
